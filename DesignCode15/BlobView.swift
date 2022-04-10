@@ -32,12 +32,6 @@ struct BlobView: View {
         }
     }
     
-    
-    
-    
-    
-    
-    
     func path(in rect: CGRect, x: Double, x2: Double) -> Path {
         var path = Path()
         let width = rect.size.width
