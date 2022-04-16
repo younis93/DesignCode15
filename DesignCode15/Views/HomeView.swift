@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  DesignCode15
 //
-//  Created by Younis J on 15/03/2022.
+//  Created by Younis J on 16/04/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -64,18 +64,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-            
-            ContentView()
-                .preferredColorScheme(.dark)
-                .previewLayout(.device)
-        }
-            
-        ContentView()
-            .previewDevice("iPad Pro (11-inch) (3rd generation)")
-
+        HomeView()
     }
 }

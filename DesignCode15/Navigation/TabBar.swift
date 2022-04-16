@@ -8,44 +8,29 @@
 import SwiftUI
 
 struct TabBar: View {
-    @State var selectedTab: Tab = .home
+    @AppStorage("selectedTab") var selectedTab: Tab = .home
     @State var color: Color = .teal
     @State var tabItemWidth:CGFloat = 0
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Group{
-                switch selectedTab {
-                case .home:
-                    ContentView()
-                case .explore:
-                    AccountView()
-                case .notifications:
-                    AccountView()
-                case .library:
-                    AccountView()
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-            HStack {
-                buttons
-            }
-            .padding(.horizontal, 8) // add padding to left and right of the tab
-            .padding(.top, 14)
-            .frame(height: 88, alignment: .top)
-            .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 34,style: .continuous))
-            .background(
-                background
-            )
-            .overlay(
-                overlay
-            )
-            .strokeStyle(cornerRadius: 34)
-            .frame(maxHeight: .infinity, alignment: .bottom)
-            .ignoresSafeArea()
+        HStack {
+            buttons
         }
+        .padding(.horizontal, 8) // add padding to left and right of the tab
+        .padding(.top, 14)
+        .frame(height: 88, alignment: .top)
+        .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 34,style: .continuous))
+        .background(
+            background
+        )
+        .overlay(
+            overlay
+        )
+        .strokeStyle(cornerRadius: 34)
+        .frame(maxHeight: .infinity, alignment: .bottom)
+        .ignoresSafeArea()
     }
+    
     
     var buttons: some View {
         ForEach(itemTabs) { item in
@@ -96,7 +81,7 @@ struct TabBar: View {
             }
             if selectedTab == .notifications { Spacer() }
         }
-            .padding(.horizontal, 8)
+        .padding(.horizontal, 8)
     }
     
     var overlay: some View {
@@ -120,7 +105,7 @@ struct TabBar: View {
             }
             if selectedTab == .notifications { Spacer() }
         }
-            .padding(.horizontal, 8)
+        .padding(.horizontal, 8)
     }
 }
 
@@ -130,7 +115,7 @@ struct TabBar_Previews: PreviewProvider {
             TabBar()
             TabBar()
                 .preferredColorScheme(.light)
-.previewInterfaceOrientation(.landscapeLeft)
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }
