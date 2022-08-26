@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var hasScroll = false
+    @State var hasScrolled = false
     
     var body: some View {
         ScrollView {
@@ -26,9 +26,9 @@ struct HomeView: View {
         .onPreferenceChange(ScrollPreferenceKey.self, perform: { value in
             withAnimation(.easeOut){
                 if value < 0 {
-                    hasScroll = true
+                    hasScrolled = true
                 } else {
-                    hasScroll = false
+                    hasScrolled = false
                 }
             }
         })
@@ -37,8 +37,7 @@ struct HomeView: View {
         })
         
         .overlay(
-            NavigationBar(title: "Featured")
-                .opacity(hasScroll ? 1 : 0)
+            NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
         )
     }
 }
@@ -48,3 +47,12 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
+
+
+
+
+
+
+
