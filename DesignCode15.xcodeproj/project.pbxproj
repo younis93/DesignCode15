@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB2929C727FB79F700D7C887 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2929C627FB79F700D7C887 /* BlobView.swift */; };
+		AB40B323296C9FF300114342 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40B322296C9FF300114342 /* MatchView.swift */; };
 		AB42114A28A9742E000FA0C1 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB42114928A9742D000FA0C1 /* FeaturedItem.swift */; };
 		AB42114C28A97ADF000FA0C1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB42114B28A97ADF000FA0C1 /* NavigationBar.swift */; };
 		AB4CAAAB28B8EDEC00225E0E /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CAAAA28B8EDEC00225E0E /* AnimatableFontModifier.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		AB2929C627FB79F700D7C887 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		AB40B322296C9FF300114342 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		AB42114928A9742D000FA0C1 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		AB42114B28A97ADF000FA0C1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		AB4CAAAA28B8EDEC00225E0E /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				AB9C347C280AE11000DF5A79 /* HomeView.swift */,
+				AB40B322296C9FF300114342 /* MatchView.swift */,
 				AB5C90EF28B2B5D400794A23 /* PreferenceKeys.swift */,
 				AB6E472527EE5E63000E50EA /* AccountView.swift */,
 			);
@@ -218,6 +221,7 @@
 			files = (
 				AB6E472227EA4C9C000E50EA /* Testing.swift in Sources */,
 				ABB9A40827E1117D007E7F74 /* ContentView.swift in Sources */,
+				AB40B323296C9FF300114342 /* MatchView.swift in Sources */,
 				ABB9A40627E1117D007E7F74 /* DesignCode15App.swift in Sources */,
 				AB9C347D280AE11000DF5A79 /* HomeView.swift in Sources */,
 				AB69BB002802EB7E00C41BCF /* TabBar.swift in Sources */,
